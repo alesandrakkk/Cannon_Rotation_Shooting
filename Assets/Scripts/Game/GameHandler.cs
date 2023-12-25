@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class GameHandler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public PlayerInputs InputModule;
+
+    public RotateBase rotationModule;
+
+    public Shootbase shootbaseModule;
+
+    private void Update()
     {
-        
+        rotationModule.Rotate(InputModule.InputRotation);
+                
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void KeyBoardInputs() {
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            shootbaseModule.Shoot();
+        }
     }
+
 }

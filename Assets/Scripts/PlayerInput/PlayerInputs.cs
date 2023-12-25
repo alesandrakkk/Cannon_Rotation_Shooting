@@ -5,19 +5,12 @@ using UnityEngine;
 public class PlayerInputs : MonoBehaviour
 {
     [SerializeField] private float rotationSpeed;
-
-    [SerializeField] private RotateBase rotatebase;
-
-    [SerializeField] private Shootbase shootBase;
+      
+    public Vector2 InputRotation = new Vector2();
 
     public void Update(){
 
-        rotatebase.Rotate(new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical") * Time.deltaTime * rotationSpeed));
-        
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            shootBase.Shoot();
-        }
-            
+        InputRotation = (new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical") * Time.deltaTime * rotationSpeed));
+                         
     }
 }

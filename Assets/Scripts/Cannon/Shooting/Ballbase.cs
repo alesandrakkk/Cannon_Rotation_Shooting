@@ -6,13 +6,13 @@ public class Ballbase : MonoBehaviour
 {
     public Rigidbody Rigidbody;
 
-    
-      private void OnTriggerEnter(Collider other)
+   
+    private void OnTriggerEnter(Collider other)
     {
         gameObject.SetActive(false);
     }
       
-        
+       
 
     private void OnCollisionEnter(Collision other)
     {
