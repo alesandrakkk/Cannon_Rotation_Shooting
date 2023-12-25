@@ -10,6 +10,8 @@ public class GameHandler : MonoBehaviour
 
     public Shootbase shootbaseModule;
 
+    public UIHendler
+
     private void Update()
     {
         rotationModule.Rotate(InputModule.InputRotation);
