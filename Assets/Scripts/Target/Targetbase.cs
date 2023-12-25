@@ -16,7 +16,6 @@ public class Targetbase : MonoBehaviour
     private int hp = 100;
 
    
-
     public void SwitchLevel()
     {
         switch (level)

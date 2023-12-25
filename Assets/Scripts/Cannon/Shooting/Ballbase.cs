@@ -11,9 +11,8 @@ public class Ballbase : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
-      
+                   
        
-
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.TryGetComponent<Targetbase>(out var targetbase)){

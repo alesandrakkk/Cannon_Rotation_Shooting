@@ -10,20 +10,23 @@ public class GameHandler : MonoBehaviour
 
     public Shootbase shootbaseModule;
 
-    public UIHendler
+    
 
-    private void Update()
+    void Update()
     {
         rotationModule.Rotate(InputModule.InputRotation);
-                
+
+        KeyBoardInput();
     }
 
-    private void KeyBoardInputs() {
+    private void KeyBoardInput()
+    {
 
         if (Input.GetKeyDown(KeyCode.F))
         {
             shootbaseModule.Shoot();
         }
     }
+
 
 }
