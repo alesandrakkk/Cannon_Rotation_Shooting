@@ -356,6 +356,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7146423102663023292, guid: d314e9d9ab55ccf449d07e5cf856ffa7, type: 3}
+      propertyPath: level
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7146423102663023295, guid: d314e9d9ab55ccf449d07e5cf856ffa7, type: 3}
       propertyPath: m_Name
       value: target (2)
@@ -613,7 +617,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874965177}
-  m_LocalRotation: {x: 0.1567601, y: -0.0032487193, z: 0.0005156474, w: 0.98763126}
+  m_LocalRotation: {x: 0.15676013, y: -0.0032487519, z: 0.00051565276, w: 0.98763126}
   m_LocalPosition: {x: 0, y: 4, z: -6.311}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -730,7 +734,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.1567601, y: -0.0032487193, z: 0.0005156474, w: 0.98763126}
+  m_LocalRotation: {x: 0.15676013, y: -0.0032487519, z: 0.00051565276, w: 0.98763126}
   m_LocalPosition: {x: 0, y: 4, z: -6.311}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -925,6 +929,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb56aa00b0ab8c24496bf2eaa1882bd6, type: 2}
+    - target: {fileID: 7146423102663023292, guid: d314e9d9ab55ccf449d07e5cf856ffa7, type: 3}
+      propertyPath: level
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7146423102663023295, guid: d314e9d9ab55ccf449d07e5cf856ffa7, type: 3}
       propertyPath: m_Name
       value: target (1)
@@ -1435,6 +1443,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 567068b5edab882488f6f586abc4eac9, type: 2}
+    - target: {fileID: 7146423102663023292, guid: d314e9d9ab55ccf449d07e5cf856ffa7, type: 3}
+      propertyPath: level
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7146423102663023295, guid: d314e9d9ab55ccf449d07e5cf856ffa7, type: 3}
       propertyPath: m_Name
       value: target

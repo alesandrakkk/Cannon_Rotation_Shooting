@@ -4,7 +4,36 @@ using UnityEngine;
 
 public class Targetbase : MonoBehaviour
 {
+    public TargetLevel level;
+
+    public enum TargetLevel
+    {
+        Easy,
+        Medium,
+        Hard
+    }
+
     private int hp = 100;
+
+    private void Update() {
+        SwitchLevel();
+    }
+
+    public void SwitchLevel()
+    {
+        switch (level)
+        {
+            case TargetLevel.Easy:
+                Debug.Log("You get 10 point xp");
+                break;
+            case TargetLevel.Medium:
+                Debug.Log("You get 15 point xp");
+                break;
+            case TargetLevel.Hard:
+                Debug.Log("You get 20 point xp");
+                break;
+        }
+    }
 
     public void GetDamage(int damage){
 
@@ -14,10 +43,10 @@ public class Targetbase : MonoBehaviour
 
         if (hp <= 0)
 
-        TargetDestroy();
+        TargetCrush();
     }
 
-    private void TargetDestroy(){
+    private void TargetCrush(){
 
         gameObject.SetActive(false);
 

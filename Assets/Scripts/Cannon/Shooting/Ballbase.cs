@@ -6,10 +6,13 @@ public class Ballbase : MonoBehaviour
 {
     public Rigidbody Rigidbody;
 
-    private void OnTriggerEnter(Collider other)
+    
+      private void OnTriggerEnter(Collider other)
     {
         gameObject.SetActive(false);
     }
+      
+        
 
     private void OnCollisionEnter(Collision other)
     {
@@ -17,7 +20,9 @@ public class Ballbase : MonoBehaviour
 
             Debug.Log("Nice Shot");
 
-            targetbase.GetDamage(Random.Range(2,50));
+            targetbase.SwitchLevel();
+
+            targetbase.GetDamage(Random.Range(0,20));
 
             gameObject.SetActive(false);
         }
