@@ -231,6 +231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 408785551}
   - component: {fileID: 408785550}
+  - component: {fileID: 408785555}
   - component: {fileID: 408785553}
   - component: {fileID: 408785554}
   m_Layer: 0
@@ -253,7 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 0
-  shootbase: {fileID: 0}
+  shootbase: {fileID: 2074562813}
   InputRotation: {x: 0, y: 0}
 --- !u!4 &408785551
 Transform:
@@ -305,6 +306,21 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
+--- !u!114 &408785555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408785549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1920aa93085fceb4fb27e948126dc5d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InputModule: {fileID: 408785550}
+  rotationModule: {fileID: 2074562811}
+  shootbaseModule: {fileID: 2074562813}
 --- !u!1001 &424427885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1555,7 +1571,7 @@ MonoBehaviour:
   axis: {fileID: 2074562810}
   current: {x: 0, y: 0}
   origin: {fileID: 2074562811}
-  coeff: {x: 1, y: 1}
+  coeff: {x: 2, y: 2}
 --- !u!114 &2074562813
 MonoBehaviour:
   m_ObjectHideFlags: 0
