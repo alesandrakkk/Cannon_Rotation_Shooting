@@ -19,15 +19,14 @@ public class Shootbase : MonoBehaviour
 
         direction = indicatorTransform.forward + transform.forward;
 
-        Ballbase currentBall = NewObjectCreation();
-        
-        if(currentBall == null)
+        Ballbase currentBall = LookFreeBall();
+
+        if (currentBall == null)
         {
-            currentBall = LookFreeBall();
+            currentBall = NewObjectCreation(); 
 
         }
-
-        currentBall.gameObject.SetActive(true);
+                    
 
         currentBall.Rigidbody.AddForce(direction * force, ForceMode.VelocityChange);
     }

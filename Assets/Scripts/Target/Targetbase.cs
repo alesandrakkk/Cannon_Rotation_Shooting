@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
+
 
 public class Targetbase : MonoBehaviour
 {
@@ -33,6 +35,8 @@ public class Targetbase : MonoBehaviour
     }
 
     public void GetDamage(int damage){
+
+        transform.DOScale(1.5f, 0.5f).SetLoops(2, LoopType.Yoyo);
 
         Debug.Log($"Brought damage { damage}");
 
